@@ -232,6 +232,7 @@ bool printRunningStr(String str, int delayTime)
 
 void setup() 
 {
+    matrix.setRotation(1);
     matrix.setIntensity(10); // яркость от 0 до 15
     pinMode(2, INPUT_PULLUP);
     attachInterrupt(0, isr, CHANGE);
